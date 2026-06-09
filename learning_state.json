@@ -1,0 +1,10 @@
+{
+  "total_validations": 965,
+  "stats": {
+    "correct": 200,
+    "incorrect": 0,
+    "corrected": 98,
+    "discarded": 561
+  },
+  "pending_retraining": true
+}

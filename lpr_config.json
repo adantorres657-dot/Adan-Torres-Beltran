@@ -1,0 +1,24 @@
+{
+    "show_rectangles": true,
+    "show_text": true,
+    "show_fps": true,
+    "resolution": "alta",
+    "auto_save_images": true,
+    "process_every_n_frames": 2,
+    "duplicate_timeout": 10,
+    "ocr_lang": "en",
+    "detection_mode": "full",
+    "conf_threshold_vehicle": 0.4,
+    "conf_threshold_plate": 0.35,
+    "camera_index": 0,
+    "validate_mx_format": true,
+    "use_heavy_ocr": true,
+    "brightness_control": false,
+    "_comments": {
+        "camera_index": "Cambiado de 1 a 0 (cámara por defecto)",
+        "use_heavy_ocr": "DESACTIVADO: CharCNN incompatible con crops YOLO, TrOCR/PaddleOCR consumen VRAM innecesariamente",
+        "resolution": "Alta para mejor calidad de OCR con EasyOCR",
+        "process_every_n_frames": "Ajustar según carga: 3-5 para tráfico bajo, 7-10 para alto",
+        "nota_charcnn": "CharCNN 98.2% precisión pero requiere segmentación char-by-char que falla con crops YOLO. Considerar arquitectura seq2seq en futuro."
+    }
+}
